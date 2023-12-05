@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/cb06fec0a1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="./assets/texture-2694538_1920.jpg" alt="">
+    <!-- music tasiyici -->
+    <div class="music-player">
+      <!-- oynatma listesi -->
+      <button id="playlist">
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+
+      <!-- artist resmi -->
+      <img src="assets/mp3indirdur-Celik-Hercai.jpeg" alt="" id="song-image" />
+
+      <!-- sarki detayi -->
+      <div class="song-details">
+        <p id="song-name"></p>
+        <p id="song-artist"></p>
+      </div>
+
+      <!-- oynatma secenekleri -->
+      <div class="player-options">
+        <button id="shuffle">
+          <i class="fa-solid fa-shuffle"></i>
+        </button>
+        <button id="prev">
+          <i class="fa-solid fa-backward-step"></i>
+        </button>
+        <button id="play">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="pause" class="hide">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <button id="next">
+          <i class="fa-solid fa-forward-step"></i>
+        </button>
+        <button id="repeat">
+          <i class="fa-solid fa-repeat"></i>
+        </button>
+      </div>
+
+      <!-- ses -->
+      <audio id="audio" src="assets/mp3indirdur-Celik-Hercai.mp3" preload="metadata"></audio>
+      <div id="progress-bar">
+        <div id="current-progress"></div>
+      </div>
+
+      <!-- zaman tasiyici -->
+      <div class="time-container">
+        <div id="current-time"></div>
+        <div id="max-duration"></div>
+      </div>
+
+      <!-- playlist container -->
+      <div id="playlist-container" class="hide">
+        <button id="close-button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul id="playlist-songs"></ul>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
