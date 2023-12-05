@@ -14,5 +14,5 @@ The project was developed using the following technologies:
 
 Below you can find a screenshot of the project:
 
-![Screenshot](ekran.gif)
+![Screenshot](ekrangif.gif)
 
